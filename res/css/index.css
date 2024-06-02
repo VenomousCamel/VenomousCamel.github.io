@@ -1,5 +1,5 @@
 header {
-    width: 90%;
+    width: 20%;
     margin: 0 auto;
     text-align: center;
 }
@@ -11,4 +11,17 @@ header h1 {
     color: white;
     border: 1px solid darkred;
     border-radius: 15px;
+}
+
+nav {
+    border: 1px solid darkred;
+    position: fixed;
+    left: 0;
+    top: 30px;
+    width: 8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px 0;
 }
