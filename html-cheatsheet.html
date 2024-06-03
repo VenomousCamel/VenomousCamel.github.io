@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VenomousCamel - HTML Cheatsheet</title>
+        <link href="./res/css/index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>VenomousCamel</h1>
+        </header>
+        <nav>
+            <h4>VC Nav</h4>
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./html-cheatsheet.html"><li>HTML Cheatsheet</li></a>
+                <a href="./css-cheatsheet.html"><li>CSS Cheatsheet</li></a>
+                <a href="./js-cheatsheet.html"><li class="ul-last">JS Cheatsheet</li></a>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>HTML Cheatsheet</h1>
+            <section>
+                <h2>Basic Structure</h2>
+                <p>
+
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Common Attributes</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;!DOCTYPE&gt;</td>
+                            <td>Declares the document type and version of HTML</td>
+                            <td>html - current html standard</td>
+                            <td>Must be the first thing in the document.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;html&gt;</td>
+                            <td>The root element of an HTML document.</td>
+                            <td>lang - meta tag, language</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Contains meta-information about the document (e.g., title, links to stylesheets).</td>
+                            <td><em>n/a</em></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;title&gt;</td>
+                            <td>Sets the title of the document, shown in the browser's title bar or tab.</td>
+                            <td><em>n/a</em></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;body&gt;</td>
+                            <td>Contains the content of the document, such as text, images, links, etc.</td>
+                            <td><em>n/a</em></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Text and Formatting</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;h1&gt;<br>:<br>&lt;h6&gt;</td>
+                            <td>Headings, <strong>h1</strong> is the highest (or most important) level,<br>and <strong>h6</strong> is the lowest.</td>
+                            <td>Commonly styled with font-size and font-weight.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;p&gt;</td>
+                            <td>Defines a paragraph.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;br&gt;</td>
+                            <td>Inserts a line break.</td>
+                            <td>Self-closing, no /&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;hr&gt;</td>
+                            <td>Inserts a horizontal rule (line).</td>
+                            <td>Self-closing, no /&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;strong&gt;</td>
+                            <td>Indicates strong importance, typically rendered in bold.</td>
+                            <td>Commonly styled with font-weight.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;em&gt;</td>
+                            <td>Indicates emphasis, typically rendered in italics.</td>
+                            <td>Commonly used in figure captions</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;blockquote&gt;</td>
+                            <td>Defines a block of quoted text.</td>
+                            <td>Commonly styled to separate from standard text.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;code&gt;</td>
+                            <td>Defines a piece of computer code.</td>
+                            <td>Commonly styled to separate from standard text, in monospace font</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;pre&gt;</td>
+                            <td>Preformatted text, retains spaces and line breaks.</td>
+                            <td>Commonly styled to separate from standard text.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;small&gt;</td>
+                            <td>Renders text in a smaller size.</td>
+                            <td>Commonly used for asides.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Links and Images</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr class="tag-L1">
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                        <tr class="tag-L2">
+                            <th>Attribute</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tag-L1">
+                            <td>&lt;a&gt;</td>
+                            <td>Defines a hyperlink (anchor).</td>
+                            <td>Can link to internal and external pages, and parts of current page.</td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td><em>href</em></td>
+                            <td>The URL of the link.</td>
+                            <td>
+                                Absolute: full path.<br>
+                                Relative: path from current file.<br>
+                                Section: scrolls to given element id.
+                            </td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td><em>target</em></td>
+                            <td>Specifies where to open the linked document.</td>
+                            <td>
+                                _self: <em>Default</em>. Opens in same window/tab.<br>
+                                _blank: Opens in new window/tab.<br>
+                                _parent: Opens in the parent frame.<br>
+                                _top: Opens in the full body of the window.
+                            </td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;img&gt;</td>
+                            <td>Embeds an image.</td>
+                            <td>Self-closing, with /&gt;</td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td><em>src</em></td>
+                            <td>The path to the image.</td>
+                            <td>Path may be absolute or relative.</td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td><em>alt</em></td>
+                            <td>Alternative text for the image.</td>
+                            <td>Displays if/when image isn't loaded.</td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td><em>width</em> and <em>height</em></td>
+                            <td>Specifies the width and height of the image.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>      
+                <h2>Lists</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;ul&gt;</td>
+                            <td>Unordered List</td>
+                            <td>List items display with bullet points.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;ol&gt;</td>
+                            <td>Ordered List</td>
+                            <td>List items display with sequential numerals.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;li&gt;</td>
+                            <td>List item</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;dl&gt;</td>
+                            <td>Description list</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;dt&gt;</td>
+                            <td>Term in a description list</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;dd&gt;</td>
+                            <td>Description of the term</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Tables</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>Defines a table.</td>
+                            <td>Commonly styled with <em>border-collapse: collapse;</em></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tr&gt;</td>
+                            <td>Table row.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;th&gt;</td>
+                            <td>Table header cell.</td>
+                            <td>Commonly adjusted with <em>colspan</em> and <em>rowspan</em> attributes.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;</td>
+                            <td>Table data cell.</td>
+                            <td>Commonly adjusted with <em>colspan</em> and <em>rowspan</em> attributes.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;caption&gt;</td>
+                            <td>Table caption.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;thead&gt;</td>
+                            <td>Groups the header content in a table.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tbody&gt;</td>
+                            <td>Groups the body content in a table.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tfoot&gt;</td>
+                            <td>Groups the footer content in a table.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Forms</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tag-L1">
+                            <td>&lt;form&gt;</td>
+                            <td>Defines an HTML form for user input.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>action</td>
+                            <td>The URL to send form data to.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>method</td>
+                            <td>The HTTP method to use when sending form data.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;input&gt;</td>
+                            <td>Defines an input control.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>type</td>
+                            <td>Specifies the type of input (e.g., text, password, submit).</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>name</td>
+                            <td>The name of the input.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>value</td>
+                            <td>The initial value of the input.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;textarea&gt;</td>
+                            <td>Defines a multiline text input control.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;button&gt;</td>
+                            <td>Defines a clickable button.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;select&gt;</td>
+                            <td>Defines a drop-down list.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;option&gt;</td>
+                            <td>Defines an option in a drop-down list.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;label&gt;</td>
+                            <td>Defines a label for an <em>input</em> element.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Semantic Elements</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td>Defines a header for a document or section.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;nav&gt;</td>
+                            <td>Defines a container for navigation links.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;main&gt;</td>
+                            <td>Specifies the main content of the document.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;article&gt;</td>
+                            <td>Defines an article.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td>Defines a section.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;aside&gt;</td>
+                            <td>Defines content aside from the content it is placed in.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Defines a footer for a document or section.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;figure&gt;</td>
+                            <td>Specifies self-contained content, like illustrations, diagrams, photos, etc.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;figcaption&gt;</td>
+                            <td>Defines a caption for a <em>figure</em> element.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Multimedia</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tag-L1">
+                            <td>&lt;audio&gt;</td>
+                            <td>Embeds sound content.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>src</td>
+                            <td>The URL of the audio file.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>controls</td>
+                            <td>Specifies that audio controls should be displayed.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;video&gt;</td>
+                            <td>Embeds video content.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>src</td>
+                            <td>The URL of the video file.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>controls</td>
+                            <td>Specifies that video controls should be displayed.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;source&gt;</td>
+                            <td>Specifies multiple media resources for <em>audio</em> and <em>video</em>.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Miscellaneous</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tag-L1">
+                            <td>&lt;div&gt;</td>
+                            <td>Defines a division or section in an HTML document.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;span&gt;</td>
+                            <td>Defines a section in a document for styling purposes.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;iframe&gt;</td>
+                            <td>Embeds another HTML page within the current page.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>src</td>
+                            <td>The URL of the embedded page.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;script&gt;</td>
+                            <td>Embeds or references an executable script.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L2">
+                            <td>src</td>
+                            <td>The URL of an external script file.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;link&gt;</td>
+                            <td>Defines the relationship between a document and an external resource (typically used to link to stylesheets).</td>
+                            <td></td>
+                        </tr>
+                        <tr class="tag-L1">
+                            <td>&lt;meta&gt;</td>
+                            <td>Provides metadata about the HTML document (e.g., charset, author, viewport settings).</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h2>Attributes</h2>
+                <p></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Generic Attribute</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>id</td>
+                            <td>Specifies a unique id for an element.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>class</td>
+                            <td>Specifies one or more class names for an element (for CSS and JavaScript).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>style</td>
+                            <td>Specifies inline CSS styles for an element.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>title</td>
+                            <td>Specifies extra information about an element (displayed as a tooltip).</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
